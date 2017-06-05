@@ -1,0 +1,46 @@
+{
+  "name": "wx-ding-aes",
+  "version": "0.0.1",
+  "description": "Enterprise wechat and DingTalk AES decode library.",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "dist",
+    "types",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "mocha testDir/test.js",
+    "clean": "rm -rf testDir types dist",
+    "pretest": "npm run clean && tsc test.ts --outDir testDir",
+    "posttest": "npm run clean",
+    "build": "npm run clean && tsc",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecfexorg/wx-ding-aes.git"
+  },
+  "keywords": [
+    "qyw",
+    "enterprise",
+    "wechat",
+    "dingding",
+    "dingtalk",
+    "aes"
+  ],
+  "author": "beary",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ecfexorg/wx-ding-aes/issues"
+  },
+  "homepage": "https://github.com/ecfexorg/wx-ding-aes#readme",
+  "devDependencies": {
+    "@types/chai": "^4.0.0",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^7.0.27",
+    "chai": "^4.0.1",
+    "mocha": "^3.4.2",
+    "typescript": "^2.3.4"
+  }
+}
