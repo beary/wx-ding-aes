@@ -1,1 +1,1 @@
-export { decode } from './parser'
+export { decode, encode } from './parser'
