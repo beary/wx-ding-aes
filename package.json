@@ -1,6 +1,6 @@
 {
   "name": "wx-ding-aes",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Enterprise wechat and DingTalk AES decode library.",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
