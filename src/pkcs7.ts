@@ -12,8 +12,8 @@ const defaultSize = 32
  */
 export const encode = (buf: Buffer, blockSize?: number) => {
   blockSize = blockSize || defaultSize
-  let padLen = (blockSize - buf.length % blockSize) || blockSize
-  let padBuf = new Buffer(padLen)
+  const padLen = (blockSize - buf.length % blockSize) || blockSize
+  const padBuf = Buffer.alloc(padLen)
   padBuf.fill(padLen)
   return Buffer.concat([buf, padBuf])
 }
@@ -27,6 +27,7 @@ export const encode = (buf: Buffer, blockSize?: number) => {
 export const decode = (buf: Buffer, blockSize?: number) => {
   blockSize = blockSize || defaultSize
   let padLen = buf[buf.length - 1]
-  if (padLen < 1 || padLen > blockSize) padLen = 0
+  if (padLen < 1 || padLen > blockSize)
+    padLen = 0
   return buf.slice(0, buf.length - padLen)
 }
