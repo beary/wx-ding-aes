@@ -13,9 +13,11 @@ const defaultSize = 32
 export const encode = (buf: Buffer, blockSize?: number) => {
   blockSize = blockSize || defaultSize
   const padLen = (blockSize - buf.length % blockSize) || blockSize
-  const padBuf = Buffer.alloc(padLen)
-  padBuf.fill(padLen)
-  return Buffer.concat([buf, padBuf])
+  const padBuf = Buffer
+    .alloc(buf.length + padLen)
+    .fill(padLen)
+  buf.copy(padBuf)
+  return padBuf
 }
 
 /**
