@@ -1,7 +1,7 @@
 {
   "name": "wx-ding-aes",
-  "version": "0.0.7",
-  "description": "Enterprise wechat and DingTalk AES decode library.",
+  "version": "0.0.8",
+  "description": "Wechat open platform, Enterprise wechat and DingTalk AES decode library.",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
   "files": [
@@ -22,9 +22,10 @@
     "url": "git+https://github.com/ecfexorg/wx-ding-aes.git"
   },
   "keywords": [
+    "wechat",
+    "weixin",
     "qywx",
     "enterprise",
-    "wechat",
     "dingding",
     "dingtalk",
     "aes"
