@@ -1,6 +1,6 @@
 {
   "name": "wx-ding-aes",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Wechat open platform, Enterprise wechat and DingTalk AES decode library.",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
@@ -38,10 +38,10 @@
   "homepage": "https://github.com/ecfexorg/wx-ding-aes#readme",
   "devDependencies": {
     "@types/chai": "^4.0.4",
-    "@types/mocha": "^2.2.43",
-    "@types/node": "^8.0.47",
+    "@types/mocha": "^2.2.44",
+    "@types/node": "^8.0.51",
     "chai": "^4.1.2",
     "mocha": "^4.0.1",
-    "typescript": "^2.5.3"
+    "typescript": "^2.6.1"
   }
 }

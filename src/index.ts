@@ -1,1 +1,3 @@
-export { decode, encode } from './aes'
+import * as simple from './simple'
+export { decode, encode } from './wx'
+export { simple }
