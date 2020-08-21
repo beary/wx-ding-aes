@@ -42,7 +42,10 @@ const res = aes.decode(text, encodingAESKey)
 >
 > `encodingAESKey`: 创建套件时的 encodingAESKey
 >
-> `key`: 对于钉钉参考[官方文档][1]中的 `$key` ，对于企业微信参考[官方文档][2]中的 `CorpID` ，对于微信开放平台参考[官方文档][3]中的 _消息体加密_ 中的描述则是 appid 。
+> `key`: 
+>    - 对于钉钉参考[官方文档](https://ding-doc.dingtalk.com/doc#/faquestions/ltr370)中的 `$key` 
+>    - 对于企业微信参考[官方文档](https://work.weixin.qq.com/api/doc/90000/90139/90968)中的 `CorpID` 
+>    - 对于微信开放平台参考[官方文档](https://developers.weixin.qq.com/doc/oplatform/Third-party_Platforms/Message_Encryption/Technical_Plan.html)中的 _消息体加密_ 中的描述则是 appid 。
 
 > `return`: 加密后的密文
 
@@ -52,6 +55,3 @@ const encodingAESKey = 'xxx'
 const key = 'xxx'
 const res = aes.encode(text, encodingAESKey, key)
 ```
-[1]:(https://ding-doc.dingtalk.com/doc#/faquestions/ltr370)
-[2]:(https://work.weixin.qq.com/api/doc/90000/90139/90968)
-[3]:(https://developers.weixin.qq.com/doc/oplatform/Third-party_Platforms/Message_Encryption/Technical_Plan.html)
