@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ecfexorg/wx-ding-aes.git"
+    "url": "git+https://github.com/beary/wx-ding-aes.git"
   },
   "keywords": [
     "wechat",
@@ -33,9 +33,9 @@
   "author": "beary",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ecfexorg/wx-ding-aes/issues"
+    "url": "https://github.com/beary/wx-ding-aes/issues"
   },
-  "homepage": "https://github.com/ecfexorg/wx-ding-aes#readme",
+  "homepage": "https://github.com/beary/wx-ding-aes#readme",
   "devDependencies": {
     "@types/chai": "^4.0.4",
     "@types/mocha": "^2.2.44",
